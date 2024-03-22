@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "pass.1234";
+$password = "yourpass";
 $dbname = "quera_college";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,8 +11,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Generate and execute transactions for n new accounts
-$totalAccounts = n;
+// Generate and execute transactions for n = 100 new accounts
+$totalAccounts = 100;
 $targetBalance = -1000000000;
 
 for ($i = 0; $i < $totalAccounts; $i++) {
